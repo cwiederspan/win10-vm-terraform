@@ -6,17 +6,11 @@ variable "location" {
   default = "westus2"
 }
 
-variable "keyvault-object-id" {
-  default = "f446ab5a-fe3c-4db2-b7b6-912a84610b29"
-}
+variable "keyvault-object-id" { }
 
-variable "computerName" {
-  default = "AZVM20181215"
-}
+variable "computerName" { }
 
-variable "username" {
-  default = "cwiederspan"
-}
+variable "username" { }
 
 variable "password" { }
 
