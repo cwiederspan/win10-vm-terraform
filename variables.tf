@@ -1,17 +1,8 @@
-variable "prefix" { 
-  default = "cdw-azvm-20181215"
-}
-
-variable "location" {
-  default = "westus2"
-}
-
+variable "prefix" { }
+variable "location" { }
 variable "keyvault-object-id" { }
-
 variable "computerName" { }
-
 variable "username" { }
-
 variable "password" { }
 
 variable "timezone" {
