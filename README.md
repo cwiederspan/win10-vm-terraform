@@ -13,5 +13,5 @@ location = "westus2"
 ## Run with Terraform
 
 ```bash
-terraform plan -var-file="secret.tfvars" -var 'password=yourpassword'
+terraform apply -var-file="secret.tfvars" -var 'password=yourpassword'
 ```
