@@ -2,7 +2,7 @@
 
 data "azurerm_client_config" "current" {}
 
-resource "azurerm_key_vault" "test" {
+resource "azurerm_key_vault" "myVault" {
   name                            = "${var.prefix}-vault"
   location                        = "${azurerm_resource_group.myGroup.location}"
   resource_group_name             = "${azurerm_resource_group.myGroup.name}"
