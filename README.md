@@ -15,3 +15,7 @@ location = "westus2"
 ```bash
 terraform apply -var-file="secret.tfvars" -var 'password=yourpassword'
 ```
+
+## Setup Windows 10
+
+* Add computer to Azure Active Directory
