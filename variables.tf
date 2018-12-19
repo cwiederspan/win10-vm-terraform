@@ -10,12 +10,22 @@ variable "timezone" {
 }
 
 # To Lookup VM Images: az vm image list --output tsv --all > images.csv
+# variable "vm" {
+#   type = "map"
+#   default = {
+#     publisher = "MicrosoftVisualStudio"
+#     offer     = "Windows"
+#     sku       = "Windows-10-N-x64"
+#     version   = "latest"
+#   }
+# }
+
 variable "vm" {
   type = "map"
   default = {
-    publisher = "MicrosoftVisualStudio"
-    offer     = "Windows"
-    sku       = "Windows-10-N-x64"
+    publisher = "MicrosoftWindowsDesktop"
+    offer     = "Windows-10"
+    sku       = "rs5-pro"
     version   = "latest"
   }
 }
