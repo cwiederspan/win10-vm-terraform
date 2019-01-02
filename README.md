@@ -33,4 +33,5 @@ terraform apply -var-file="secret.tfvars" -var 'password=yourpassword'
   * Install DotNet
   * Install Docker Bridge
 * sudo ln -s /usr/bin/python3 /usr/bin/python
+* sudo ln -s /usr/bin/pip3 /usr/bin/pip
 * curl -L https://aka.ms/InstallAzureCli | bash
