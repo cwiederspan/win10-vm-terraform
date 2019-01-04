@@ -16,11 +16,21 @@ location = "westus2"
 terraform apply -var-file="secret.tfvars" -var 'password=yourpassword'
 ```
 
+## Encrypt Drives
+```bash
+az vm encryption enable --resource-group "cdw-azvm-20190103" --name "AZVM20190103" --disk-encryption-keyvault "cdw-azvm-20190103-vault" --volume-type ALL
+
+az vm encryption show --resource-group "cdw-azvm-20190103" --name "AZVM20190103"
+```
+
+## Azure Active Directory
+
+* Add computer to Azure Active Directory
+* Login with AAD account
+
 ## Setup Windows 10
 
 * Run Windows Update
-* Add computer to Azure Active Directory
-* Login with AAD account
 * Install Windows Subsystem for Linux (WSL) 
   * wlinux
 * Install Visual Studio Code

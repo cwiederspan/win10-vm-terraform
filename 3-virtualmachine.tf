@@ -38,17 +38,17 @@ resource "azurerm_virtual_machine" "myVm" {
   #   create_option   = "Attach"  
   #   lun             = 1  
   #   disk_size_gb    = "${azurerm_managed_disk.datadisk.disk_size_gb}"  
-  # }  
+  # }
   
   os_profile {
     computer_name  = "${var.computerName}"
     admin_username = "${var.username}"  
     admin_password = "${var.password}"  
-  }  
+  }
   
   os_profile_windows_config {
     enable_automatic_upgrades = true  
     provision_vm_agent        = true
     timezone                  = "${var.timezone}"
-  }  
-}  
+  }
+}
