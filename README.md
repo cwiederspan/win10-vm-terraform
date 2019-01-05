@@ -16,6 +16,12 @@ location = "westus2"
 terraform apply -var-file="secret.tfvars" -var 'password=yourpassword'
 ```
 
+## Azure Active Directory
+
+* Add computer to Azure Active Directory
+* Login with AAD account
+
+
 ## Encrypt Drives
 ```bash
 az vm encryption enable --resource-group "cdw-azvm-20190103" --name "AZVM20190103" --disk-encryption-keyvault "cdw-azvm-20190103-vault" --volume-type ALL
@@ -23,10 +29,22 @@ az vm encryption enable --resource-group "cdw-azvm-20190103" --name "AZVM2019010
 az vm encryption show --resource-group "cdw-azvm-20190103" --name "AZVM20190103"
 ```
 
-## Azure Active Directory
+## Turn on Windows Features
 
-* Add computer to Azure Active Directory
-* Login with AAD account
+* Hyper-V
+* Windows Subsystem for Linux
+* Windows Update
+
+
+## Map Drives
+
+From [this article](https://blogs.msdn.microsoft.com/windowsazurestorage/2014/05/26/persisting-connections-to-microsoft-azure-files/)
+
+```powershell
+cmdkey /add:<yourstorageaccountname>.file.core.windows.net /user:Azure\<yourstorageaccountname> /pass:<YourStorageAccountKey> 
+
+net use * \\<yourstorageaccountname>.file.core.windows.net\projects 
+```
 
 ## Setup Windows 10
 
