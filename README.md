@@ -55,11 +55,17 @@ net use * \\<yourstorageaccountname>.file.core.windows.net\projects
 * Setup OneDrive
 * Install Visual Studio Enterprise
 * Install Docker (Edge) for Windows
+* Install NodeJs
+  * curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  * nvm install 10.15.0
+  * npm install -g @angular/cli
 * $ bash /etc/setup
   * Install Python
-  * Install NodeJs
   * Install DotNet
   * Install Docker Bridge
 * sudo ln -s /usr/bin/python3 /usr/bin/python
 * sudo ln -s /usr/bin/pip3 /usr/bin/pip
 * curl -L https://aka.ms/InstallAzureCli | bash
+* Install Google Chrome
+* Install SQL Management Studio
+* Install Postman
