@@ -36,6 +36,11 @@ az vm encryption show --resource-group "cdw-azvm-20190103" --name "AZVM20190103"
 * Windows Update
 
 
+## Add Project Drive in Azure
+
+* Connect from Azure Portal
+
+~~
 ## Map Drives
 
 From [this article](https://blogs.msdn.microsoft.com/windowsazurestorage/2014/05/26/persisting-connections-to-microsoft-azure-files/)
@@ -45,6 +50,7 @@ cmdkey /add:<yourstorageaccountname>.file.core.windows.net /user:Azure\<yourstor
 
 net use * \\<yourstorageaccountname>.file.core.windows.net\projects 
 ```
+~~
 
 ## Setup Windows 10
 
@@ -66,6 +72,7 @@ net use * \\<yourstorageaccountname>.file.core.windows.net\projects
 * sudo ln -s /usr/bin/python3 /usr/bin/python
 * sudo ln -s /usr/bin/pip3 /usr/bin/pip
 * curl -L https://aka.ms/InstallAzureCli | bash
+* Install Azure Function CLI - sudo apt-get install azure-functions-core-tools
 * Install Google Chrome
 * Install SQL Management Studio
 * Install Postman
